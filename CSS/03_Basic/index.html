@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        background-color: #141313;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+
+      .navbar {
+        background-color: #141313;
+        filter: drop-shadow(3px 3px 8px rgba(255, 123, 0, 0.267));
+
+        padding: 25px;
+      }
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.2s ease-in-out,
+          transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        transform: scale(1);
+      }
+
+      .navbar a:hover {
+        color: rgb(255, 132, 0);
+        transform: scale(2);
+      }
+
+      .card_container {
+        background-color: #e9e9e9;
+        height: 400px;
+        width: 300px;
+        border: none;
+        border-radius: 12px;
+        filter: drop-shadow(0px 0px 07px rgba(255, 123, 0, 0.751));
+        z-index: 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        display:flex;
+        flex-direction:column;
+        
+
+      }
+
+      .card_container p{
+        margin-top:30px;
+        font-weight:bold;
+        font-size:larger;
+        text-align:center;
+
+        
+
+        
+
+
+      }
+
+      .card_container  img{
+        height:30px;
+        width:30px;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:30px;
+
+
+
+
+
+
+      }
+
+      .navbar_3{
+        margin:0;
+        padding:0;
+        background-color: #230124;
+      }
+
+      .navbar_3 ul{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        list-style:none;
+
+
+
+      }
+
+      .navbar_3 a {
+        text-decoration:none;
+        color:white;
+        padding:10px;
+        display:block;
+
+      }
+
+
+      .navbar_3 .drop_down-content {
+        display:none;
+        
+
+      }
+
+      .navbar_3 .dropdown_content:hover .drop_down-content {
+        display:block;
+        position:absoulte;
+       
+
+        background-color: rgb(1, 53, 53);
+        min-width:150px;
+
+
+
+
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a st href="#">Contact us</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="nav2">
+        <ul>
+            <li><a href="#">Main Page</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team Contact</a></li>
+        </ul>
+        <button type="submit"> Submit</button>
+    </div>
+
+        <div class="navbar_3">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown_content">
+                    <a href="#">About</a>
+                    <div class="drop_down-content">
+                        <a href="#">OurStory</a>
+                        <a href="#">Team</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    
+                </li>
+                <li><a href="#">Products</a></li>
+                <li>
+                    <button class="login_button">
+                        Login
+                    </button>
+                </li>
+            </ul>
+        </div>
+   
+  </body>
+</html>
