@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   getWeatherBtn.addEventListener("click", async () => {
     const city = cityInput.value.trim();
-    if (!city) return;
+    if (!city) return;  // maan lo user ne khaali string enter karde "   " 
 
     // it may throw an error
     // server/database is always in another continent

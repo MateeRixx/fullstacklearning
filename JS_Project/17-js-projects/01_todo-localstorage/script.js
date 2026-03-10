@@ -20,16 +20,16 @@ add_task_button.addEventListener('click',()=>{
    const task_text = todo_input.value.trim();
 
    //what above line is doing ? 
-   // Trying to grab  a specific piece of data from an input field , clean up any extra spaces around it and stroing it in the task_text variable
+   // Trying to grab  a specific piece of data from an input field , clean up any extra spaces around it and storing it in the task_text variable
 
-   //checking if some one is adding task without entering something
+   //checking if some one is adding task without entering something tha is khaali space baar me task enter kardiya kya ?
 
-   if(task_text===""){
+   if(task_text===""){  //<-- yeh keh raaha hai agr aisa hai toh NUll return kardo 
     return;
 
    }
 
-   const newTask={
+   const newTask={   // task ka object 
     id:Date.now(),
     text:task_text,
     isCompleted: false
