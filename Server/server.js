@@ -4,6 +4,7 @@ const path = require("path")
 
 const port=3000;
 
+
 // how to make a server 
 
 const server=http.createServer((req,res)=>{
@@ -11,6 +12,11 @@ const server=http.createServer((req,res)=>{
     // what to do is request url is just a "/"
 
    const filePath= path.join(__dirname,req.url==='/' ? "index.html" : req.url);
+
+
+
+  
+
 
    const extName=path.extname(filePath).toLowerCase();
 
@@ -46,5 +52,9 @@ server.listen(port,()=>{
     console.log(`Server is listening to port ${port}`);
 
 })
+
+console.log(ans);
+
+// 
 
 
