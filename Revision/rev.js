@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded",()=>{
+
+
+
 const con=document.getElementById("container");
 
 con.style.display="flex";
@@ -33,10 +37,67 @@ const quotes=await fetch("https://motivational-spark-api.vercel.app/api/quotes/r
 
 const data = await quotes.json();
 
+const str=localStorage.setItem("QTT",JSON.stringify(data.quote));
+
+// store in local storage 
+
 para.textContent=`"${data.quote}"`;
 
 
     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+})
+
 
 
 
